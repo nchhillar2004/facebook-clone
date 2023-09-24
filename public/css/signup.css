@@ -1,0 +1,8 @@
+.names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.names input{
+    width: 146px;
+}

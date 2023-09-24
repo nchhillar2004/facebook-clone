@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+    body{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .left-container{
+        text-align: center;
+        align-items: center;
+    }
+
+    .facebook{
+        height: 100px;
+    }
+
+    .left-container p{
+        width: 300px;
+        font-size: 20px;
+    }
+}
+

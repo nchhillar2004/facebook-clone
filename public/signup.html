@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - sign up or log in</title>
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="left-container">
+                <img src="assets/facebook.svg" alt="Facebook" class="facebook">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <div class="right-container">
+                <div class="card">
+                    <form action="signup.php" method="post">
+                        <div class="names">
+                            <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+                        </div>
+                        <input type="text" name="username" id="username" placeholder="Username or Email address" required>
+                        <input type="password" name="password" id="password" placeholder="Create Password" required>
+                        <button type="submit" class="primary-btn">Sign up</button>
+                    </form>
+                    <hr class="card-line">
+                    <a href="index.html"><button type="button" class="secondary-btn">Log in</button></a>
+                </div>
+                <p><a href="#" class="create-page"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="top">
+                <div id="google_translate_element" class="google-translate"></div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><a>Login</a></li>
+                    <li><a>Games</a></li>
+                    <li><a>Messenger</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Facebook Lite</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
