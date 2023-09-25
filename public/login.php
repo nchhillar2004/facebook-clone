@@ -24,7 +24,14 @@ session_start(); // Start a PHP session
         
         header("Location: home.php"); // Redirect to home page
     } else {
-        echo "Error: Invalid username or password";
+        $_SESSION['error_message'] = "Inalid username or password";
+        $_SESSION['error_code'] = "401";
+        $_SESSION['error_header'] = "HTTP/1.0 401 Unauthorized";
+        $_SESSION['error_title'] = "Unauthorized";
+        $_SESSION['error_description'] = "You do not have permission to access this page. Please ensure you are logged in with the appropriate credentials";
+        // Redirect to the 404 error page
+        header("Location: 404.php");
+        exit;
     }
     
     $conn->close();
