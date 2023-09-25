@@ -8,7 +8,7 @@ session_start(); // Start a PHP session
     $conn = mysqli_connect($server, $username, $password);
 
     if (!$conn){
-        die("connection to database failes due to:". mysqli_connect_error());
+        die("connection to database fails due to:". mysqli_connect_error());
     }
     echo "Successfully connnected to database";
 

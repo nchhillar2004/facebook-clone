@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Post</title>
+</head>
+<body>
+    <h1>Create a Post</h1>
+    <form action="post.php" method="POST" enctype="multipart/form-data">
+        <label for="title">Title (29 characters):</label>
+        <input type="text" name="title" id="title" maxlength="29" required>
+        
+        <br>
+        
+        <label for="description">Description (optional, 49 characters):</label>
+        <input type="text" name="description" id="description" maxlength="49">
+        
+        <br>
+        
+        <label for="content">Content (max 250 characters):</label>
+        <textarea name="content" id="content" rows="5" maxlength="250" required></textarea>
+        
+        <br>
+        
+        <label for="image">Upload Image (optional, max 40MB):</label>
+        <input type="file" name="image" id="image" accept="image/*" max-size="40000000">
+        
+        <br>
+        
+        <input type="submit" value="Post">
+    </form>
+</body>
+</html>
