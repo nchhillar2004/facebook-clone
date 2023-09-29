@@ -70,11 +70,6 @@ $conn->close();
             <p>Posted by: <?php echo $username;?>
         </p>
         <div>
-            <h2><?php echo $title ?></h2>
-            <p><?php echo $content ?></p>
-            <p><?php echo $timestamp ?></p>
-            <img src=<?php echo $image ?> alt="Image">
-            <?php echo $image; ?>
         </div>
         <a href="post.html"><button>Create a post</button></a>
         </div>
